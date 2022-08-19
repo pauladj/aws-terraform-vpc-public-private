@@ -15,7 +15,6 @@ provider "aws" {
 
 module "networking" {
   source                   = "./networking"
-  region                   = var.region
   environment              = var.environment
   vpc_cidr                 = var.vpc_cidr
   public_subnets_cidr      = var.public_subnets_cidr

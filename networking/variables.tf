@@ -18,11 +18,6 @@ variable "private_subnets_cidr" {
   description = "CIDR block for Private Subnet"
 }
 
-variable "region" {
-  type        = string
-  description = "Region in which the bastion host will be launched"
-}
-
 variable "availability_zones" {
   type        = list(any)
   description = "AZ in which all the resources will be deployed"
